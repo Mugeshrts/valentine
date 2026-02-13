@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-950 via-blue-950 to-amber-950 min-h-screen overflow-x-hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0f;
+  }
+}
+
+@layer utilities {
+
+  /* ========== FLOATING ANIMATIONS ========== */
+
+  @keyframes floatHeart {
+    0% {
+      transform: translateY(100vh) translateX(0) rotate(0deg) scale(0);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-20vh) translateX(var(--float-x, 50px)) rotate(var(--rotate, 180deg)) scale(1);
+      opacity: 0;
+    }
+  }
+
+  @keyframes floatSparkle {
+    0% {
+      transform: translateY(100vh) scale(0) rotate(0deg);
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-10vh) scale(1.5) rotate(720deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes gentleFloat {
+
+    0%,
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+
+    25% {
+      transform: translateY(-20px) translateX(10px);
+    }
+
+    50% {
+      transform: translateY(-10px) translateX(-10px);
+    }
+
+    75% {
+      transform: translateY(-30px) translateX(5px);
+    }
+  }
+
+  /* ========== GLASSY SHIMMER ========== */
+
+  @keyframes glassShimmer {
+    0% {
+      background-position: -200% center;
+    }
+
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  @keyframes glowPulse {
+
+    0%,
+    100% {
+      box-shadow:
+        0 0 20px rgba(255, 215, 0, 0.3),
+        0 0 40px rgba(135, 206, 235, 0.2),
+        0 0 60px rgba(255, 215, 0, 0.1),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    50% {
+      box-shadow:
+        0 0 30px rgba(255, 215, 0, 0.5),
+        0 0 60px rgba(135, 206, 235, 0.4),
+        0 0 90px rgba(255, 215, 0, 0.2),
+        inset 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  /* ========== GRADIENT ANIMATIONS ========== */
+
+  @keyframes gradientFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes rainbowShift {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  /* ========== ELEGANT ENTRANCES ========== */
+
+  @keyframes elegantFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px) scale(0.95);
+      filter: blur(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.7) rotate(-5deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* ========== TEXT EFFECTS ========== */
+
+  @keyframes textReveal {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+      letter-spacing: 15px;
+      filter: blur(5px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      letter-spacing: normal;
+      filter: blur(0);
+    }
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  /* ========== CELEBRATION EFFECTS ========== */
+
+  @keyframes confettiPop {
+    0% {
+      transform: translateY(0) scale(0) rotate(0deg);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-100vh) scale(1) rotate(var(--rotate, 360deg));
+      opacity: 0;
+    }
+  }
+
+  @keyframes heartBeat {
+
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    10%,
+    30% {
+      transform: scale(1.1);
+    }
+
+    20%,
+    40% {
+      transform: scale(1.05);
+    }
+  }
+
+  /* ========== UTILITY CLASSES ========== */
+
+  .animate-float-heart {
+    animation: floatHeart var(--duration, 12s) linear infinite;
+    animation-delay: var(--delay, 0s);
+  }
+
+  .animate-float-sparkle {
+    animation: floatSparkle var(--duration, 10s) linear infinite;
+    animation-delay: var(--delay, 0s);
+  }
+
+  .animate-gentle-float {
+    animation: gentleFloat 6s ease-in-out infinite;
+  }
+
+  .animate-glass-shimmer {
+    animation: glassShimmer 3s linear infinite;
+  }
+
+  .animate-glow-pulse {
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+
+  .animate-gradient-flow {
+    background-size: 300% 300%;
+    animation: gradientFlow 8s ease infinite;
+  }
+
+  .animate-rainbow {
+    animation: rainbowShift 10s linear infinite;
+  }
+
+  .animate-elegant-fade {
+    animation: elegantFadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-slide-left {
+    animation: slideInFromLeft 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-slide-right {
+    animation: slideInFromRight 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-text-reveal {
+    animation: textReveal 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-confetti {
+    animation: confettiPop var(--duration, 3s) ease-out infinite;
+    animation-delay: var(--delay, 0s);
+  }
+
+  .animate-heartbeat {
+    animation: heartBeat 1.5s ease-in-out infinite;
+  }
+
+  /* ========== GLASSMORPHISM STYLES ========== */
+
+  .glass-blue {
+    background: linear-gradient(135deg,
+        rgba(255, 215, 0, 0.12) 0%,
+        rgba(255, 193, 7, 0.08) 100%);
+    backdrop-filter: blur(25px) saturate(180%);
+    border: 2px solid rgba(255, 215, 0, 0.25);
+    box-shadow:
+      0 12px 40px 0 rgba(0, 0, 0, 0.6),
+      inset 0 0 30px rgba(255, 215, 0, 0.08),
+      0 0 20px rgba(255, 215, 0, 0.15);
+  }
+
+  .glass-blue {
+    background: linear-gradient(135deg,
+        rgba(135, 206, 235, 0.12) 0%,
+        rgba(0, 191, 255, 0.08) 100%);
+    backdrop-filter: blur(25px) saturate(180%);
+    border: 2px solid rgba(135, 206, 235, 0.25);
+    box-shadow:
+      0 12px 40px 0 rgba(0, 0, 0, 0.6),
+      inset 0 0 30px rgba(135, 206, 235, 0.08),
+      0 0 20px rgba(135, 206, 235, 0.15);
+  }
+
+  .glass-premium {
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.08) 0%,
+        rgba(255, 255, 255, 0.04) 100%);
+    backdrop-filter: blur(30px) saturate(200%);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+      0 12px 40px 0 rgba(0, 0, 0, 0.7),
+      inset 0 0 40px rgba(255, 255, 255, 0.04);
+  }
+
+  .glass-gradient {
+    background: linear-gradient(135deg,
+        rgba(255, 215, 0, 0.15) 0%,
+        rgba(135, 206, 235, 0.15) 100%);
+    backdrop-filter: blur(25px) saturate(180%);
+    border: 2px solid;
+    border-image: linear-gradient(135deg,
+        rgba(255, 215, 0, 0.4),
+        rgba(135, 206, 235, 0.4)) 1;
+    box-shadow:
+      0 12px 40px 0 rgba(0, 0, 0, 0.7),
+      inset 0 0 35px rgba(255, 255, 255, 0.08),
+      0 0 25px rgba(255, 215, 0, 0.1);
+  }
+
+  /* ========== GRADIENT TEXT STYLES ========== */
+
+  .gradient-text-sunshine {
+    background: linear-gradient(135deg,
+        #FFD700 0%,
+        #87CEEB 25%,
+        #1E90FF 50%,
+        #87CEEB 75%,
+        #FFD700 100%
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: gradientFlow 5s ease infinite;
+  }
+
+  .gradient-text-ocean {
+    background: linear-gradient(135deg,
+        #87CEEB 0%,
+        #00BFFF 25%,
+        #1E90FF 50%,
+        #87CEEB 75%,
+        #4FC3F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: gradientFlow 5s ease infinite;
+  }
+
+  .gradient-text-romantic {
+    background: linear-gradient(135deg,
+        #FFD700 0%,
+        #87CEEB 25%,
+        #FFD700 50%,
+        #87CEEB 75%,
+        #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 300% 300%;
+    animation: gradientFlow 6s ease infinite;
+  }
+
+  /* ========== HOVER EFFECTS ========== */
+
+  .hover-lift {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  /* ========== SHIMMER OVERLAY ========== */
+
+  .shimmer-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 100%);
+    animation: glassShimmer 3s infinite;
+  }
+
+  /* ========== MODAL ANIMATIONS ========== */
+
+  @keyframes elegant-fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-elegant-fade {
+    animation: elegant-fade 0.3s ease-out;
+  }
+
+  @keyframes scale-in {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* ========== TEXT UTILITIES ========== */
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ========== GRADIENT FLOW ANIMATION ========== */
+
+  @keyframes gradient-flow {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient-flow {
+    background-size: 200% 200%;
+    animation: gradient-flow 3s ease infinite;
+  }
+}
