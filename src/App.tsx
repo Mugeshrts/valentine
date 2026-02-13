@@ -167,7 +167,7 @@ function App() {
                 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black leading-tight text-white"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                Thanga Maileyy,
+                Alazhu Mailu,
                 <br />
                 Will You Be My
                 <br />
@@ -271,10 +271,10 @@ function App() {
                 Our Beautiful Memories
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-blue-100/90 font-light px-6 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "'Dancing Script', cursive", animationDelay: '0.8s' }}>
-                Mailii, every moment with you feels like a dream I never want to wake up from, my everything. 🌟
+                Papa, every moment with you feels like a dream I never want to wake up from, my everything. 🌟
               </p>
               <p className="text-sm sm:text-base md:text-lg text-sky-200/70 px-6 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '1s' }}>
-                These memories are the threads that weave our love story, each one precious, each one eternal, my beautiful Thithi.
+                These memories are the threads that weave our love story, each one precious, each one eternal, my beautiful Pikachu.
               </p>
             </div>
 
@@ -330,7 +330,7 @@ function App() {
                   className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black gradient-text-romantic px-2"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
-                  To My Alagu Mailuuu
+                  To My Alagu Papa
                 </h1>
                 <div className="flex items-center justify-center gap-3 md:gap-4">
                   <div className="h-px w-12 md:w-20 bg-gradient-to-r from-transparent via-blue-400 to-transparent" />
@@ -342,23 +342,23 @@ function App() {
               {/* Letter Content */}
               <div className="space-y-4 md:space-y-6 text-white/95 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 <p className="animate-text-reveal" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}>
-                  djfhkdhfkdjhfkdjh... 🤍
+                  Pickachu🤍
                 </p>
 
                 <p className="animate-text-reveal" style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsa animi corrupti, eligendi provident voluptatem repellendus itaque blanditiis ducimus esse, consectetur rem facilis ab quisquam? Dolorem necessitatibus, maxime nemo dolorum cum odio voluptatem asperiores aut blanditiis iure, non labore dignissimos perferendis cumque quae ullam minima beatae sit voluptatum ab. Doloribus.
+                 Hey Papa , I didn't prepare anything for valentine's day, so sorry 😐 Namaku irukra prachanaila valentine's day celebrate pandanumanu think panduna but Nama yevlav kastathula irunthalum celebrate pandanum nu thoonuchu , nama matha couple mari outing la pooga mudiyathunu therium but irunthalum nama pandra chat and weekly once pesura phone call eh poothum
                 </p>
 
-                <p className="animate-text-reveal" style={{ animationDelay: '0.8s', opacity: 0, animationFillMode: 'forwards' }}>
+                {/* <p className="animate-text-reveal" style={{ animationDelay: '0.8s', opacity: 0, animationFillMode: 'forwards' }}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae natus necessitatibus quisquam praesentium blanditiis iure molestias similique fuga cupiditate.
                 </p>
 
                 <p className="animate-text-reveal" style={{ animationDelay: '1.1s', opacity: 0, animationFillMode: 'forwards' }}>
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ducimus voluptate quo quam sint dolore, impedit minima, commodi aspernatur maiores sunt saepe aut aperiam maxime molestiae, quasi sequi adipisci optio cum! Aspernatur alias facere optio ad, eaque dolores hic.
-                </p>
+                </p> */}
 
                 <p className="animate-text-reveal" style={{ animationDelay: '1.4s', opacity: 0, animationFillMode: 'forwards' }}>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae debitis, in facere sint dolores, qui optio voluptatum officiis, illum nobis aliquid tempora veritatis rem voluptatem quas autem nihil.
+                 I think do my best for our relationship, Hope we get together soon💯 Intha app Una surprise pandumanu therla. Na mara maten , Neeum mara matinu nambura. I'm always be with you dii Papa 💙🤍🫂
                 </p>
               </div>
 
@@ -413,7 +413,7 @@ function App() {
               My heart is complete! 💖
             </p>
             <p className="text-sm sm:text-base md:text-lg text-sky-200/70 px-6 max-w-2xl mx-auto">
-              This is just the beginning of our beautiful forever, my sweet Mailii. Every day with you is a celebration.
+              This is just the beginning of our beautiful forever, my sweet PAPA. Every day with you is a celebration.
             </p>
           </div>
 
@@ -472,7 +472,7 @@ function App() {
               Happy Valentine's Day, My Love! 💝
             </h2>
             <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-white/90 max-w-4xl mx-auto leading-relaxed px-2">
-              Thank you for saying yes, for choosing us, for being my forever. You are my greatest adventure, my deepest love. I love you to infinity and beyond!. Love You Soo Much Dii Thangooo 🌙💫
+              Thank you for saying yes, for choosing us, for being my forever. You are my greatest adventure, my deepest love. I love you to infinity and beyond!. Love You Soo Much Dii Papa 🌙💫
             </p>
 
             {/* Decorative Elements */}

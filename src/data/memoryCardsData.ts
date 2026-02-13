@@ -1,14 +1,14 @@
-import img1 from "../assets/download.jpeg";
-import img2 from "../assets/download.jpeg";
-import img3 from "../assets/download.jpeg";
-import img4 from "../assets/download.jpeg";
+import img1 from "../assets/pic.png";
+import img2 from "../assets/pic2.png";
+import img3 from "../assets/pic3.jpeg";
+import img4 from "../assets/pic4.png";
 
 export const memoryCardsData = [
     {
         image: img1,
         imageAlt: "The magical moment our souls recognized each other",
         title: "Forever a Precious Memory",
-        description: "lfdhdjhfjdhfjdhfjdgfdjhf fdfjhdgfhjd fhdjbfjhdgfhjk dfjhdf dgfkjdhf dkgfudhfkjdhfk dfhkdgfkhdkfh. 🤍✨",
+        description: "My stubbornness is doomed to fail in front of your love.🤍✨",
         emoji: "🤍",
         emojiPosition: "top-right" as const,
         titleGradient: "bg-gradient-to-r from-white-500 via-blue-500 to-orange-500",
@@ -25,8 +25,8 @@ export const memoryCardsData = [
     {
         image: img2,
         imageAlt: "Under the stars, making wishes that already came true",
-        title: "Words I Promise to Mailii",
-        description: "yuetrrrrrrrrrr uetryhhhhhhhhhhhhhhhhhhhhuehrrrrrr uherujjjjjjjjjjjjjjjierjh          irehierieri re.  🌙💙",
+        title: "Words I Promise to Papa",
+        description: "Until I understood, I didn't enjoy anything. After I understood, I couldn't enjoy anything except you...🌙💙",
         emoji: "🌟",
         emojiPosition: "top-right" as const,
         secondaryEmoji: "✨",
@@ -46,7 +46,7 @@ export const memoryCardsData = [
         image: img4,
         imageAlt: "Dancing through life together, heartbeat by heartbeat",
         title: "A Picture I’ll Always Love",
-        description: "lllllllllllllllllll jjjjjjjjjjjjjjjjjjjjjjjjjjj hyyyyyyyyyyyyyyyyyyyyyy ggggggggggggggggggggu, 10 rupee ice uh..",
+        description: "Your memories during separation are a double burden than love...Lend your heart once to reduce the stress of the mind..!!",
         emoji: "💃",
         emojiPosition: "top-right" as const,
         secondaryEmoji: "🎶",
@@ -65,8 +65,8 @@ export const memoryCardsData = [
     {
         image: img3,
         imageAlt: "In quiet moments, our souls speak the loudest",
-        title: "Heartfull day with My Mailii",
-        description: "loiurhgtolpisjgru lrghuluerhg elrkjgbhlkjerghlij rkjxcljkishfjfjlg ud;flhgu;shgkjsdf g;jkdhguirh ☕🤍",
+        title: "Heartfull day with My Papa",
+        description: "I knew I would be gone, but I never thought I would be gone from you like this.🤍",
         emoji: "✨",
         emojiPosition: "top-right" as const,
         secondaryEmoji: "☕",
