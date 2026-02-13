@@ -36,7 +36,7 @@ export const PasswordPrompt: React.FC<Props> = ({ onSuccess, correctCode = '0312
     <div className="min-h-screen flex items-center justify-center bg-black text-white p-4">
       <div className="w-full max-w-sm bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 text-center">
         <h2 className="text-2xl font-bold mb-4">Enter 4-digit code</h2>
-        <p className="text-sm text-white/75 mb-4">Please enter the 4-digit password to continue.</p>
+        <p className="text-sm text-white/75 mb-4">Please enter secret code to continue.</p>
 
         <input
           ref={inputRef}
